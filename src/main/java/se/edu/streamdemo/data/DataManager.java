@@ -16,10 +16,12 @@ public class DataManager {
     private File dataFile;
 
     public File getDataFile() {
+
         return dataFile;
     }
 
     public DataManager(String fileName) {
+
         dataFile = new File(fileName);
     }
 
@@ -61,7 +63,6 @@ public class DataManager {
         }
         return taskList;
     }
-
     private ArrayList<Task> parse(ArrayList<String> dataItems) {
         ArrayList<Task> allTasks = new ArrayList<>();
         for (String line : dataItems) {
